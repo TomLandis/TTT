@@ -297,11 +297,8 @@ $('#draw').on('click', function(event) {
     mark = "X";
     cMark = "O";
     begin();
-     $('#compy').slideDown();
-      setTimeout(function(){
-      computerMoves();
-    }, 500);
-
+     $('#playa').slideDown();
+     board.turn = "player";
   });
 
   $('.o').on('click', function(event) {
